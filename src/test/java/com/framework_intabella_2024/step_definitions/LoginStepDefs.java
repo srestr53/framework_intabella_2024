@@ -2,6 +2,7 @@ package com.framework_intabella_2024.step_definitions;
 
 import com.framework_intabella_2024.pages.LoginPage;
 import com.framework_intabella_2024.utilities.ConfigurationReader;
+import com.framework_intabella_2024.utilities.Driver;
 import io.cucumber.java.en.Given;
 public class LoginStepDefs {
 
@@ -31,11 +32,11 @@ public class LoginStepDefs {
         new LoginPage().login(username,password);
     }
 
-    @Given("the user logged in with username as {string} and password as {string}")
+    /*@Given("the user logged in with username as {string} and password as {string}")
     public void the_user_logged_in_with_username_as_and_password_as(String username, String password) {
       LoginPage loginPage=new LoginPage();
       loginPage.login(username,password);
-    }
+    }*/
 
 
 
