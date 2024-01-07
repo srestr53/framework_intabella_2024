@@ -1,9 +1,13 @@
 package com.framework_intabella_2024.step_definitions;
 
 import com.framework_intabella_2024.pages.LoginPage;
+import com.framework_intabella_2024.utilities.BrowserUtils;
 import com.framework_intabella_2024.utilities.ConfigurationReader;
 import com.framework_intabella_2024.utilities.Driver;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import org.junit.Assert;
+
 public class LoginStepDefs {
 
 
@@ -38,7 +42,13 @@ public class LoginStepDefs {
       loginPage.login(username,password);
     }*/
 
-
+    @Then("driver login and see title dashboard")
+    public void driver_login_and_see_title_dashboard() {
+        BrowserUtils.sleep(3);
+        String expectedTitle = "Dashboard";
+        String actualTitle = Driver.getDriver().getTitle();
+        Assert.assertEquals(expectedTitle, actualTitle);
+    }
 
 
 
