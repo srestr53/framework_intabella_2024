@@ -23,6 +23,7 @@ public abstract class BasePage {
     @FindBy(xpath = "//a//*[contains(.,'Fleet')]")
     public WebElement fleet;
 
+
     @FindBy(xpath = "//span[.='Vehicle Odometer']")
     public WebElement vehicleOdometer;
     @FindBy(xpath = "")
