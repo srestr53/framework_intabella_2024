@@ -29,10 +29,10 @@ public abstract class BasePage {
     @FindBy(xpath = "")
     public WebElement activities;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//a//span[contains(.,'Customers')]")
     public WebElement customer;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//a//span[contains(.,'Vehicles Model')]")
     public WebElement vehiclesModel;
 
     @FindBy(css = "span.title-level-1")
