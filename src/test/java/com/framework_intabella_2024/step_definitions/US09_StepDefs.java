@@ -19,7 +19,7 @@ public class US09_StepDefs {
 
     @When("user is on the calendar events page")
     public void user_is_on_the_calendar_events_page() {
-        BrowserUtils.waitForVisibility(calendarErrPageLokman.activities,10);
+        BrowserUtils.waitForVisibility(calendarErrPageLokman.activities,2);
 
         Actions actions = new Actions(Driver.getDriver());
         actions.moveToElement(calendarErrPageLokman.activities).perform();
@@ -28,14 +28,14 @@ public class US09_StepDefs {
     }
     @When("user click on the Create Calendar Event page")
     public void user_click_on_the_create_calendar_event_page() {
-        BrowserUtils.sleep(10);
+        BrowserUtils.sleep(2);
         //BrowserUtils.waitForClickablility(calendarErrPageLokman.createEvent,10);
         BrowserUtils.clickWithJS(calendarErrPageLokman.createEvent);
     }
     @When("user enters {string} in repeat every box")
     public void user_enters_in_repeat_every_box(String invalidNumber) {
         //BrowserUtils.waitForClickablility(calendarErrPageLokman.repeatCheckbox,10);
-        BrowserUtils.sleep(8);
+        BrowserUtils.sleep(2);
         calendarErrPageLokman.repeatCheckbox.click();
         BrowserUtils.waitForClickablility(calendarErrPageLokman.repeatEvery,10);
         calendarErrPageLokman.repeatEvery.click();
