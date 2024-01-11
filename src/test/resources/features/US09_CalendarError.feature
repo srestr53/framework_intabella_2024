@@ -14,37 +14,27 @@ Feature:
 
   @B31G10-192
   Scenario Outline: Verify that users see error messages when enter invalid integers
-    Given the user logged in as "driver"
+    Given the user logged in as "<userType>"
     When user is on the calendar events page
     And user click on the Create Calendar Event page
     And user enters "<invalidNumber>" in repeat every box
-    Then user sees an error message
+    Then user sees an "<expectedErrorMessage>"
 
     Examples:
-      | invalidNumber |
-      | -2            |
-      | 110           |
-
-  Scenario Outline: Verify that users see error messages when enter invalid integers
-    Given the user logged in as "sales manager"
-    When user is on the calendar events page
-    And user click on the Create Calendar Event page
-    And user enters "<invalidNumber>" in repeat every box
-    Then user sees an error message
+      | userType | invalidNumber | expectedErrorMessage                   |
+      | driver   | -2            | The value have not to be less than 1.  |
+      | driver   | 110           | The value have not to be more than 99. |
 
     Examples:
-      | invalidNumber |
-      | -2            |
-      | 110           |
-
-  Scenario Outline: Verify that users see error messages when enter invalid integers
-    Given the user logged in as "store manager"
-    When user is on the calendar events page
-    And user click on the Create Calendar Event page
-    And user enters "<invalidNumber>" in repeat every box
-    Then user sees an error message
+      | userType      | invalidNumber | expectedErrorMessage                   |
+      | sales manager | -2            | The value have not to be less than 1.  |
+      | sales manager | 110           | The value have not to be more than 99. |
 
     Examples:
-      | invalidNumber |
-      | -2            |
-      | 110           |
+      | userType      | invalidNumber | expectedErrorMessage                   |
+      | store manager | -2            | The value have not to be less than 1.  |
+      | store manager | 110           | The value have not to be more than 99. |
+
+
+
+
