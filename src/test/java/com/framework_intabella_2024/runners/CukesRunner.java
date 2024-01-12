@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/framework_intabella_2024/step_definitions",
         dryRun = false,
-        tags = "@login",
+        tags = "",
         publish = true //generating a report with public link
 )
 public class CukesRunner {}
