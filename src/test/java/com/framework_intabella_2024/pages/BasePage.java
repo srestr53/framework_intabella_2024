@@ -19,6 +19,22 @@ import java.util.List;
 
 public abstract class BasePage {
 
+
+    @FindBy(xpath = "//a//*[contains(.,'Fleet')]")
+    public WebElement fleet;
+
+
+    @FindBy(xpath = "//span[.='Vehicle Odometer']")
+    public WebElement vehicleOdometer;
+    @FindBy(xpath = "")
+    public WebElement activities;
+
+    @FindBy(xpath = "")
+    public WebElement customer;
+
+    @FindBy(xpath = "")
+    public WebElement vehiclesModel;
+
     @FindBy(css = "span.title-level-1")
     public List<WebElement> menuOptions;
 

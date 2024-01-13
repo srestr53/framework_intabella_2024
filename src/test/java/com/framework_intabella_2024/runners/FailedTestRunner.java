@@ -10,6 +10,11 @@ import org.junit.runner.RunWith;
         glue = "com/framework_intabella_2024/step_definitions"
 )
 public class FailedTestRunner {
+
 }
+
+
+
+
 
 
