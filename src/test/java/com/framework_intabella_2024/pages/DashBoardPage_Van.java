@@ -14,18 +14,7 @@ public class DashBoardPage_Van {
     @FindBy(xpath = "//*[.='Calendar Events']")
     public WebElement calenderEventButton;
 
-    @FindBy(xpath = "//a[@data-action-name='new-event']")
-    public WebElement linkNewEvent;
-    
 
-    @FindBy(css = "[data-name = 'recurrence-repeat']")
-    public WebElement inputRecurrenceRepeat2;
-
-    @FindBy(xpath = "//input[@aria-invalid='false']")
-    public WebElement inputInterval;
-
-    @FindBy(xpath = "//button[@type='button']")
-    public WebElement buttonAlert;
 
     
     
