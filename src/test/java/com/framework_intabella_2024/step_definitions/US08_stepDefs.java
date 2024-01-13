@@ -4,7 +4,6 @@ import com.framework_intabella_2024.pages.CalendarEventPage_Van;
 import com.framework_intabella_2024.pages.CreateCalendarEventPage_Van;
 import com.framework_intabella_2024.pages.DashBoardPage_Van;
 import com.framework_intabella_2024.utilities.BrowserUtils;
-import com.framework_intabella_2024.utilities.ConfigurationReader;
 import com.framework_intabella_2024.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -13,7 +12,7 @@ import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.interactions.Actions;
 
-public class Us_08_stepDefs {
+public class US08_stepDefs {
     CalendarEventPage_Van calendarEvent=new CalendarEventPage_Van();
     CreateCalendarEventPage_Van createCalendarVan = new CreateCalendarEventPage_Van();
     DashBoardPage_Van dashBoardVan= new DashBoardPage_Van();
