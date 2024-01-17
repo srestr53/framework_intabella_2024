@@ -14,6 +14,9 @@ public class US06_VehiclesPage_Jonny extends BasePage {
 
         }
 
+    @FindBy(xpath = "//*[text() = 'Vehicles']")
+    public WebElement vehiclesOption;
+
         @FindBy(css = ".more-bar-holder")
         public List<WebElement> threeDotOptions;
         @FindBy(css = ".fa-eye.hide-text")
